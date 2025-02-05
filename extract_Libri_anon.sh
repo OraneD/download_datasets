@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=ExtractTar
-#SBATCH --output=ExtractTar%j.out
-#SBATCH --error=ExtractTar%j.err
+#SBATCH --job-name=ExtractAnon
+#SBATCH --output=ExtractAnon%j.out
+#SBATCH --error=ExtractAnon%j.err
 #SBATCH --ntasks=30
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=10
