@@ -6,8 +6,9 @@
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=10
 #SBATCH --time=05:00:00
-#SBATCH --account=xyz@v100# nom du job
+#SBATCH --account=yjs@v100
 
+bash
 module purge
 conda deactivate
 module load pytorch-gpu/py3/2.3.0
