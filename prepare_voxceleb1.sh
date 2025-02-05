@@ -11,4 +11,4 @@
 source ~/.bashrc
 conda activate kiwano_env
 set -x
-python ../kiwano/recipes/resnet/local/prepare_voxceleb1.py --vad --num_jobs 30 $SCRATCH/voxceleb2/ $SCRATCH/resnet_data/voxceleb1/
+python ../kiwano/recipes/resnet/local/prepare_voxceleb1.py --vad --num_jobs 30 $SCRATCH/voxceleb1/ $SCRATCH/resnet_data/voxceleb1/
