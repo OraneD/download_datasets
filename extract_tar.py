@@ -21,4 +21,6 @@ if __name__ == "__main__":
     parser.add_argument("tar_gz_path", help="Path to the tar.gz file")
     parser.add_argument("extract_path", nargs="?", default='.', help="Path to extract the contents (default: current directory)")
     args = parser.parse_args()
+    extract_tar_file_threaded(args.tar_gz_path, args.extract_path)
+
     

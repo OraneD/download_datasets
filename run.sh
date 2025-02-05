@@ -8,9 +8,7 @@
 #SBATCH --time=05:00:00
 #SBATCH --account=yjs@v100
 
-bash
-module purge
-conda deactivate
-module load pytorch-gpu/py3/2.3.0
+source ~/.bashrc
+conda activate kiwano_env
 set -x
-srun python extract_tar.py $SCRATCH/LibriHeavy/heavy_trials_.tar.gz $SCRATCH/LibriHeavy/
+srun python extract_tar.py $SCRATCH/LibriHeavy/heavy_trials.tar.gz $SCRATCH/LibriHeavy/
